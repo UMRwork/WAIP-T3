@@ -1,0 +1,62 @@
+html {
+  zoom: 150%;
+} 
+
+body {
+font-size: x-large;
+margin: 0;
+background: url(https://cdn.discordapp.com/attachments/795758905904988200/935466832754769970/speed-lines-composed-of-glowing-backgrounds-abstract-background-vector.png) no-repeat 50% fixed;
+background-size: cover;
+color: rgb(230, 224, 224);
+font-family: Arial;
+}
+
+button {
+  font-size: 25px;
+}
+
+img.hovering:hover {opacity: 0.4;}
+
+
+
+
+
+
+table {
+  font-family: arial, sans-serif;
+  background-color: #0f037c;
+  border: solid #ffffff;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+
+.btnReset {
+  background-color: #000000;
+  border: thick solid #CCCCCC;
+  }
+
+.center {
+  text-align: center;
+
+  }
+
+
+input {
+  font-size:x-large;
+  text-align:left;
+  color: rgb(63, 63, 63);
+  background-color: #FFFFFF;
+  border: 0px;
+  padding: 5px;
+  }
+
+
+caption {
+  font-size:xx-large;
+  }

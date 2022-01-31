@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTDXHTML1.0Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<!--
+Programmer					: UMAR AL-HADI BIN SHAHARIN ANWAR
+Date created				: 27/1/2022
+Version no.					: v1.0.0
+This is yourname’s website	: GPA Calculator
+-->	
+<html> 
+    <head>
+      	<meta charset="UTF-8">
+		<link rel="icon" href="https://cdn.discordapp.com/attachments/795758905904988200/932152168704774234/UMR_round.jpeg">
+		<title>GPA Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+    </head>
+    <body onload="init();">
+        <form name="calculator" action="" >
+            <table>
+                <caption style="background-color:#b6a5a5; padding:1px;border: solid #ffffff;">GPA Calculator</caption>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Credit Hour</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td><input type="text" size="15"></td>
+                    <td style="text-align: center;">
+                        <select id = "myList_1" onchange = "crdt()" >
+                            <option></option>    
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </td>
+                    <td style="text-align: center;">
+                        <select id = "myList1" onchange = "grade1()" >  
+                            <option></option>
+                            <option>A</option>
+                            <option>A-</option>  
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>C+</option>
+                            <option>C</option>
+                            <option>D+</option>
+                            <option>D</option>
+                            <option>F</option>  
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="15"></td>
+                    <td style="text-align: center;">
+                        <select id = "myList_2" onchange = "crdt()" >
+                            <option></option>    
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </td>
+                    <td style="text-align: center;">
+                        <select id = "myList2" onchange = "grade2()" >  
+                            <option></option>
+                            <option>A</option>
+                            <option>A-</option>  
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>C+</option>
+                            <option>C</option>
+                            <option>D+</option>
+                            <option>D</option>
+                            <option>F</option>  
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="15"></td>
+                    <td style="text-align: center;">
+                        <select id = "myList_3" onchange = "crdt()" >
+                            <option></option>    
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </td>
+                    <td style="text-align: center;">
+                        <select id = "myList3" onchange = "grade3()" >  
+                            <option></option>
+                            <option>A</option>
+                            <option>A-</option>  
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>C+</option>
+                            <option>C</option>
+                            <option>D+</option>
+                            <option>D</option>
+                            <option>F</option>  
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" size="15"></td>
+                    <td style="text-align: center;">
+                        <select id = "myList_4" onchange = "crdt()" >
+                            <option></option>    
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </td>
+                    <td style="text-align: center;">
+                        <select id = "myList4" onchange = "grade4()" >  
+                            <option></option>
+                            <option>A</option>
+                            <option>A-</option>  
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>C+</option>
+                            <option>C</option>
+                            <option>D+</option>
+                            <option>D</option>
+                            <option>F</option>  
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">Total Credit Hour</th>
+                    <td><input type = "text" id = "totalcrdt" size = "20" value="0" disabled="disabled"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">GPA</th>
+                    <td><input type = "text" id = "gpa" size = "20" value="0.00" disabled="disabled"></td>
+                </tr>
+                <tr >
+                    <td colspan="3" align="center" style="text-align: center;font-size: 41px;">
+                        <button type="button"onclick="run()">calculate</button>
+                        <button>reset</button>
+                    </td>
+                </tr>
+            </table>
+            <script src="script.js"></script>
+    </body>
+</html>
+<!--
+
+-->
